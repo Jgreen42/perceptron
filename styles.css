@@ -1,0 +1,82 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  header {
+    background: linear-gradient(to right, #4285f4, #34a853, #fbbc05, #ea4335); /* Google Logo Colors */
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  main {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start; /* Adjusted to move content to the top */
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  
+  section {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+  }
+  
+  #visualization {
+    flex: 1; /* Adjusted to take up remaining space */
+  }
+  
+  #animation-container {
+    display: flex;
+    flex: 1; /* Adjusted to take up remaining space */
+    justify-content: flex-end; /* Moved to the right */
+    align-items: flex-start; /* Adjusted to move content to the top */
+    background: linear-gradient(to right, #4285f4, #34a853, #fbbc05, #ea4335); /* Google Logo Colors */
+    padding: 20px;
+  }
+  
+  #animation {
+    /* Add any specific styling for the animation container */
+  }
+  
+  .footer {
+    background: linear-gradient(to right, #4285f4, #34a853, #fbbc05, #ea4335); /* Google Logo Colors */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .footer p {
+    margin: 0;
+  }
+  
+  /* Additional Styles for Perceptron Animation */
+  .perceptron-element circle {
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .connecting-line {
+    stroke-dasharray: 5, 5;
+    animation: dash 0.5s linear forwards;
+  }
+  
+  @keyframes dash {
+    to {
+      stroke-dasharray: none;
+    }
+  }
+    
